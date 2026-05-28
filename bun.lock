@@ -1,80 +1,68 @@
-{
-  "name": "react-starter-template",
-  "private": true,
-  "scripts": {
-    "dev": "concurrently \"bun run server\" \"vite\"",
-    "server": "bun run src/server/index.ts",
-    "build": "vite build",
-    "start": "bun run dist/server.js",
-    "lint": "eslint ."
+// ===============================
+// ASSUMPTIONS & CONSTRAINTS
+// ===============================
+
+export const projectConfig = {
+  data: {
+    source: "Backend API",
+    description:
+      "All portfolio content, projects, testimonials, and contact submissions are fetched dynamically from the backend database.",
   },
 
-  "dependencies": {
-    "@dnd-kit/core": "^6.3.1",
-    "@dnd-kit/sortable": "^10.0.0",
-    "@dnd-kit/utilities": "^3.2.2",
-    "@hookform/resolvers": "^5.2.2",
-    "@radix-ui/react-accordion": "^1.2.12",
-    "@radix-ui/react-alert-dialog": "^1.1.15",
-    "@radix-ui/react-aspect-ratio": "^1.1.7",
-    "@radix-ui/react-avatar": "^1.1.10",
-    "@radix-ui/react-checkbox": "^1.3.3",
-
-    "@tanstack/react-query": "^5.90.3",
-
-    "axios": "^1.11.0",
-    "bcryptjs": "^3.0.2",
-    "cloudinary": "^2.7.0",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "express-rate-limit": "^8.1.0",
-    "firebase": "^12.3.0",
-    "framer-motion": "^12.23.24",
-    "jsonwebtoken": "^9.0.2",
-    "lucide-react": "^0.544.0",
-    "mongoose": "^8.18.0",
-    "multer": "^2.0.2",
-    "next-themes": "^0.4.6",
-    "nodemailer": "^7.0.6",
-    "react": "^19.1.2",
-    "react-dom": "^19.1.2",
-    "react-hook-form": "^7.63.0",
-    "react-router": "^7.9.4",
-    "react-router-dom": "^7.9.3",
-    "sonner": "^2.0.7",
-    "stripe": "^18.5.0",
-    "tailwind-merge": "^3.3.1",
-    "zod": "^4.1.11"
+  backend: {
+    enabled: true,
+    api:
+      "REST API / GraphQL API for handling projects, testimonials, authentication, and contact form submissions.",
   },
 
-  "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@tailwindcss/typography": "^0.5.19",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/cookie-parser": "^1.4.9",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/multer": "^2.0.0",
-    "@types/node": "^24.6.2",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
+  database: {
+    type: "MongoDB | PostgreSQL | Firebase",
+    description:
+      "Dynamic content is stored in a scalable database instead of hardcoded constant files.",
+  },
 
-    "@vitejs/plugin-react": "^5.0.3",
+  cms: {
+    enabled: true,
+    description:
+      "Projects, testimonials, and portfolio details can be managed through an admin dashboard or CMS.",
+  },
 
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.36.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.4.0",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.14",
-    "tsx": "^4.20.5",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.44.0",
-    "vite": "^5.4.11",
-    "vite-plugin-checker": "^0.10.3"
-  }
-}
+  contactForm: {
+    backendIntegration: true,
+    features: [
+      "Client-side validation",
+      "Server-side validation",
+      "Email handling",
+      "Spam protection",
+      "Success/Error states",
+    ],
+  },
+
+  assets: {
+    placeholderImages: [
+      "Unsplash",
+      "Pexels",
+      "Generated Mockups",
+    ],
+  },
+
+  performance: {
+    focus: [
+      "Optimized API calls",
+      "Smooth scrolling",
+      "Lazy loading",
+      "Responsive animations",
+      "Fast page rendering",
+    ],
+  },
+
+  scalability: {
+    futureFeatures: [
+      "Authentication",
+      "Blog integration",
+      "Analytics dashboard",
+      "Content management system",
+      "Project filtering",
+    ],
+  },
+};
