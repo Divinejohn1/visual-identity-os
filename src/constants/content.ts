@@ -1,29 +1,27 @@
 export const DESIGNER_INFO = {
-  name: "Alex Rivera",
+  name: "DIVINE ILLUMINATOR",
   role: "Creative Director & Brand Strategist",
   tagline: "Designing Visual Experiences That Build Powerful Brands.",
-  subtext: "I transform ambitious visions into cinematic visual identities that resonate and convert. Specializing in high-end branding, visual storytelling, and mobile-first design.",
-  email: "hello@alexrivera.design",
-  whatsapp: "+1234567890",
-  instagram: "https://instagram.com/alexrivera.design",
+  subtext: "I transform ambitious visions into functional visual identities that resonate and convert. Specializing in high-end branding, visual storytelling, and mobile-first design.",
+  email: "divineilluminator236@gmail.com",
+  whatsapp: "+2348139219691",
+  facebook: "https://www.facebook.com/profile.php?id=61584020391848",
   location: "Global / Remote",
   portrait: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/bda950d2-85ab-4c03-929e-838d6b58204f/designer-portrait-be014b00-1779871483162.webp",
 };
 
 export const NAVIGATION = [
-  { name: "Portfolio", href: "#portfolio" },
+  { name: "Portfolio", href: "https://www.facebook.com/profile.php?id=61584020391848" },
   { name: "Services", href: "#services" },
   { name: "About", href: "#about" },
-  { name: "Mentorship", href: "#mentorship" },
-  { name: "Blog", href: "#blog" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#divineilluminator236@gmail.com" },
 ];
 
 export const STATS = [
   { label: "Projects Completed", value: "250+" },
-  { label: "Happy Clients", value: "120+" },
-  { label: "Community Reach", value: "50k+" },
-  { label: "Years Experience", value: "6+" },
+  { label: "Happy Clients", value: "50+" },
+  { label: "Community Reach", value: "2k+" },
+  { label: "Years Experience", value: "3+" },
 ];
 
 export const SERVICES = [
@@ -38,18 +36,6 @@ export const SERVICES = [
     title: "Social Media Design",
     description: "High-impact visual content designed to stop the scroll and build an engaged community.",
     icon: "Share2",
-  },
-  {
-    id: "advertising",
-    title: "Advertising Creatives",
-    description: "Conversion-focused flyers and posters that turn viewers into loyal customers.",
-    icon: "Megaphone",
-  },
-  {
-    id: "mentorship",
-    title: "Design Mentorship",
-    description: "Practical training for aspiring designers, focusing on Pixellab & Lightroom mastery.",
-    icon: "GraduationCap",
   },
   {
     id: "content",
@@ -68,10 +54,10 @@ export const SERVICES = [
 export const PORTFOLIO = [
   {
     id: 1,
-    title: "Lumina Tech Identity",
+    title: "Campus Rx",
     category: "Branding",
     image: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/bda950d2-85ab-4c03-929e-838d6b58204f/portfolio-branding-1-1f4a4e1e-1779871482492.webp",
-    description: "Futuristic brand identity for a luxury tech startup.",
+    description: "Futuristic brand identity for a Student Media Brand.",
   },
   {
     id: 2,
