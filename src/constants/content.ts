@@ -18,8 +18,8 @@ export const NAVIGATION = [
 ];
 
 export const STATS = [
-  { label: "Projects Completed", value: "250+" },
-  { label: "Happy Clients", value: "50+" },
+  { label: "Projects Completed", value: "50+" },
+  { label: "Happy Clients", value: "20+" },
   { label: "Community Reach", value: "2k+" },
   { label: "Years Experience", value: "3+" },
 ];
